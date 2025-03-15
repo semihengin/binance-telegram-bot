@@ -17,7 +17,7 @@ bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 exchange = ccxt.binance()
 
 # 🔹 Coins and Timeframes to Monitor
-COINS = ["BNB/USDT", "XRP/USDT", "ETH/USDT", "SOL/USDT", "BTC/USDT"]
+COINS = ["BNB/USDT", "ETH/USDT", "SOL/USDT", "BTC/USDT"]
 TIMEFRAMES = ["15m", "1h", "4h", "1d"]
 
 # 🔹 Alert Threshold (e.g., alerts when price is within 0.2% of support/resistance)
@@ -145,7 +145,6 @@ def send_alert(message, multiple=False):
         bot.send_message(CHAT_ID, message, parse_mode="Markdown")
         print(f"Message Sent: {message}")
 
-# 🔹 Run the Bot
 if __name__ == "__main__":
     send_support_resistance_levels()  
     check_and_send_signals()
