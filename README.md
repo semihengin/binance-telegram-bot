@@ -2,7 +2,6 @@
 *A real-time crypto price alert bot for Binance, integrated with Telegram.*
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/) 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Binance API](https://img.shields.io/badge/API-Binance-yellow.svg)](https://binance-docs.github.io/apidocs/spot/en/)
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://core.telegram.org/bots)
 
